@@ -5,6 +5,7 @@
 
 #about .infos {
   line-height: 18px;
+  letter-spacing: 1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
