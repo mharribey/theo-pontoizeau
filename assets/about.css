@@ -1,0 +1,32 @@
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+#about .infos {
+  line-height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  margin: auto;
+  text-align: left;
+}
+
+#about .left {
+  width:50%;
+}
+
+#about .right {
+  display: flex;
+  align-items: center;
+  width:30%;
+}
+
+#about .right img {
+  width:80%;
+}
+
+#about .see-more {
+  width:100%;
+}
