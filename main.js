@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     });
 },100);
 
-
 Array.from(buttons).forEach(button=>{
   button.addEventListener("click",()=>{
     content.classList.remove("is-ready");

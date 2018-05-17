@@ -27,6 +27,10 @@
   width:100%;
 }
 
+.bottom .link-box {
+  width:100%;
+}
+
 .home {
   width:10%;
 }
@@ -51,14 +55,14 @@
   width:100%;
 }
 
-.navbar-link {
+.navbar-link, .side-link {
   cursor:pointer;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
 
-.navbar-link:hover{
+.navbar-link:hover, .side-link:hover{
   /*font-size: 0.9em;*/
   text-shadow: 3px 3px rgba(0,0,0,0.8);
 }
@@ -97,4 +101,55 @@
   opacity: 0 !important;
   transform: translateX(50px)!important;
   transition-duration: 0.5s;
+}
+
+/* bottom effects */
+
+
+nav a {
+	display: inline-block;
+	outline: none;
+	color: black;
+  width:100%;
+	text-decoration: none;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+/* Effect 5: same word slide in */
+.cl-effect-5 {
+  width:100%;
+  text-align: center;
+}
+.cl-effect-5 a {
+	overflow: hidden;
+	padding: 0;
+}
+
+.cl-effect-5 a span {
+	display: inline-block;
+  width:100%;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-5 a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.cl-effect-5 a:hover span,
+.cl-effect-5 a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
 }
