@@ -5,7 +5,7 @@
   justify-content: center;
   margin: 2vh auto;
   width:98vw;
-  height:96vh;
+  min-height:96vh;
 }
 
 .main-content {
@@ -32,10 +32,10 @@
 }
 
 .home {
-  width:10%;
+  width:15%;
 }
 .work, .about {
-  width:45%;
+  width:42.5%;
 }
 
 .content {
@@ -79,12 +79,14 @@
 .hidden-work {
   opacity: 0 !important;
   transform: translateX(400px)!important;
+  position: fixed;
 }
 
 .is-ready-work {
   opacity: 1 !important;
   transform: translateX(0) !important;
   transition-duration:0.1s;
+  position: relative;
 }
 
 .hidden {
@@ -105,8 +107,8 @@
 
 /* bottom effects */
 
-
 nav a {
+  position:relative;
 	display: inline-block;
 	outline: none;
 	color: black;
@@ -152,4 +154,40 @@ nav a:focus {
 	-webkit-transform: translateY(-100%);
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);
+}
+
+
+@media screen and (max-width:1000px){
+  .main-container {
+    margin:1vh auto;
+    flex-direction: column;
+  }
+  .main-container .main-content {
+    width:100%;
+    min-height:110vh;
+  }
+  .main-container .main-content {
+    border-bottom: 0px solid black;
+  }
+  .main-container .main-content .bottom {
+    height:3vh;
+  }
+  .main-container .main-side {
+    width:100%;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+  }
+  .main-container .main-side .link-box {
+    height:3vh;
+  }
+  .main-container .main-side .link-box.linkedin {
+    border-top:0px solid black;
+  }
+  #about-content .right {
+    display: none !important;
+  }
+  #about-content .left {
+    width:70% !important;
+  }
 }
