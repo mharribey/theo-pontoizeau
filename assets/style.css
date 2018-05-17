@@ -159,35 +159,48 @@ nav a:focus {
 
 @media screen and (max-width:1000px){
   .main-container {
-    margin:1vh auto;
+    margin: 1vh auto;
     flex-direction: column;
   }
   .main-container .main-content {
-    width:100%;
-    min-height:110vh;
+    width: 100%;
+    min-height: 90vh;
   }
   .main-container .main-content {
     border-bottom: 0px solid black;
   }
+  .main-container .main-content .content {
+    padding:5vh 0;
+  }
   .main-container .main-content .bottom {
-    height:3vh;
+    height: 5vh;
   }
   .main-container .main-side {
-    width:100%;
-    border-left:1px solid black;
-    border-right:1px solid black;
-    border-bottom:1px solid black;
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
   }
   .main-container .main-side .link-box {
-    height:3vh;
+    height:5vh;
   }
   .main-container .main-side .link-box.linkedin {
     border-top:0px solid black;
+  }
+  #work-content .project-desc {
+    display: flex;
+    flex-direction: column !important;
+  }
+  #work-content .info {
+    margin-top:1em !important;
   }
   #about-content .right {
     display: none !important;
   }
   #about-content .left {
-    width:70% !important;
+    width:80% !important;
+  }
+  #work-content .projet-desc {
+    flex-direction: column !important;
   }
 }
