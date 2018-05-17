@@ -1,5 +1,5 @@
 <!doctype html>
-<html id="home-html">
+<html>
   <head>
     <meta charset="utf-8" prefix="og: http://ogp.me/ns#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../assets/border.css">
     <link rel="stylesheet" href="../assets/about.css">
+
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
 
     <!-- Use title if it's in the page YAML frontmatter -->
@@ -56,16 +57,16 @@
       <div class="main-content border-all">
         <div class="top border-bottom">
           <div class="link-box home border-right">
-            <a href="../index.html">home</a>
+            <p class="navbar-link" id="index">home</p>
           </div>
           <div class="link-box work border-right">
-            <a href="work.html">work</a>
+            <p class="navbar-link" id="work">work</p>
           </div>
           <div class="link-box about">
-            <a href="about.html"><b>about</b></a>
+            <p class="navbar-link" id="about"><b>about</b></p>
           </div>
         </div>
-        <div class="content" id="about">
+        <div class="content hidden" id="about-content">
           <div class="infos">
             <div class="left">
               <p>
@@ -105,7 +106,7 @@
         </div>
         <div class="bottom border-top">
           <div class="link-box">
-            <a href="mailto:pontoizeau.theo@gmail.com">contact me : pontoizeau.theo@gmail.com</a>
+            <a href="mailto:pontoizeau.theo@gmail.com"><b>contact me :</b> pontoizeau.theo@gmail.com</a>
           </div>
         </div>
       </div>

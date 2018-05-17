@@ -1,9 +1,9 @@
-#about {
+#about-content {
   display: flex;
   flex-direction: column;
 }
 
-#about .infos {
+#about-content .infos {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -12,20 +12,20 @@
   text-align: left;
 }
 
-#about .left {
+#about-content .left {
   width:50%;
 }
 
-#about .right {
+#about-content .right {
   display: flex;
   align-items: center;
   width:30%;
 }
 
-#about .right img {
+#about-content .right img {
   width:80%;
 }
 
-#about .see-more {
+#about-content .see-more {
   width:100%;
 }

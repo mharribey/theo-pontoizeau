@@ -51,9 +51,31 @@
   width:100%;
 }
 
+.navbar-link {
+  cursor:pointer;
+}
+
 .link-box {
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
+}
+
+/* TRANSITION */
+
+.hidden {
+  opacity: 0 !important;
+  transform: translateX(-50px)!important;
+}
+
+.is-ready{
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  transition-duration:0.5s;
+}
+.remove {
+  opacity: 0 !important;
+  transform: translateX(50px)!important;
+  transition-duration: 0.5s;
 }
