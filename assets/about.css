@@ -1,3 +1,7 @@
+#about {
+  font-weight: 700;
+}
+
 #about-content {
   display: flex;
   flex-direction: column;

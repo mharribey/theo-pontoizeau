@@ -53,6 +53,14 @@
 
 .navbar-link {
   cursor:pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar-link:hover{
+  /*font-size: 0.9em;*/
+  text-shadow: 3px 3px rgba(0,0,0,0.8);
 }
 
 .link-box {
@@ -63,6 +71,17 @@
 }
 
 /* TRANSITION */
+
+.hidden-work {
+  opacity: 0 !important;
+  transform: translateX(400px)!important;
+}
+
+.is-ready-work {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  transition-duration:0.1s;
+}
 
 .hidden {
   opacity: 0 !important;

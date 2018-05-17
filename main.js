@@ -19,8 +19,10 @@ Array.from(buttons).forEach(button=>{
     content.classList.add("remove");
 
     setTimeout(function(){
-      if(sPage == "index.html" || sPage == "") {
-        window.location.href = "pages/" + button.id +'.html';
+      if((sPage == "index.html" || sPage == "") && button.id == "index" ) {
+        window.location.href = button.id +'.html';
+      }else if((sPage == "index.html" || sPage == "")){
+        window.location.href = "pages/" + button.id + '.html';
       }else{
         if(button.id == "index"){
           window.location.href = "../" + button.id +'.html';
@@ -38,16 +40,17 @@ const projects = document.getElementsByClassName("project-list");
 
 Array.from(projects).forEach(proj=>{
   proj.addEventListener("click",()=>{
+    console.log(proj);
     Array.from(projects).forEach(proj2=>{
       proj2.children[0].children[0].style.display = "none";
-      proj2.children[1].classList.remove("is-ready");
-      proj2.children[1].classList.add("remove");
+      proj2.children[1].classList.remove("is-ready-work");
+      proj2.children[1].classList.add("hidden-work");
       proj2.children[1].style.height = "0";
       proj2.style.margin = "0";
     });
     proj.children[0].children[0].style.display = "block";
-    proj.children[1].classList.remove("remove");
-    proj.children[1].classList.add("is-ready");
+    proj.children[1].classList.remove("hidden-work");
+    proj.children[1].classList.add("is-ready-work");
     proj.children[1].style.height = "auto";
     if (proj.id == "video"){
       proj.style.margin = "10em 0 0";

@@ -1,3 +1,7 @@
+#work {
+  font-weight: 700;
+}
+
 #work-content {
   text-align: left;
   width: 70%;
@@ -11,13 +15,12 @@
   cursor:crosshair;
 }
 
-#work-content #video .project-desc{
-  flex-direction: column;
+#work-content .title:hover {
+  padding-left: 10px;
 }
 
-#work-content #video .project-desc .video-list {
-  display: flex;
-  align-items: baseline;
+#work-content #video .project-desc.main {
+  flex-direction: column;
 }
 
 #work-content .title {
@@ -40,6 +43,11 @@
   height:0;
 }
 
+#work-content .project-desc.visible {
+  height:auto;
+  width:100%;
+}
+
 #work-content .info {
   margin-top: 0;
   font-style: italic;
@@ -47,5 +55,11 @@
 }
 
 #work-content .link {
-  font-size: 0.77em;
+  font-size: 0.75em;
+}
+
+#work-content #video .video-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
