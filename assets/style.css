@@ -107,15 +107,15 @@
 
 @keyframes fade {
   from {
-    opacity: 1;
-  } to {
     opacity: 0;
+  } to {
+    opacity: 1;
   }
 }
 
 /* bottom effects */
 
-nav a {
+nav p {
   position:relative;
 	display: inline-block;
 	outline: none;
@@ -123,10 +123,11 @@ nav a {
   width:100%;
 	text-decoration: none;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  cursor: pointer;
 }
 
-nav a:hover,
-nav a:focus {
+nav p:hover,
+nav p:focus {
 	outline: none;
 }
 
@@ -135,12 +136,12 @@ nav a:focus {
   width:100%;
   text-align: center;
 }
-.cl-effect-5 a {
+.cl-effect-5 p {
 	overflow: hidden;
 	padding: 0;
 }
 
-.cl-effect-5 a span {
+.cl-effect-5 p span {
 	display: inline-block;
   width:100%;
 	-webkit-transition: -webkit-transform 0.3s;
@@ -148,7 +149,7 @@ nav a:focus {
 	transition: transform 0.3s;
 }
 
-.cl-effect-5 a span::before {
+.cl-effect-5 p span::before {
 	position: absolute;
 	top: 100%;
 	content: attr(data-hover);
@@ -157,8 +158,8 @@ nav a:focus {
 	transform: translate3d(0,0,0);
 }
 
-.cl-effect-5 a:hover span,
-.cl-effect-5 a:focus span {
+.cl-effect-5 p:hover span,
+.cl-effect-5 p:focus span {
 	-webkit-transform: translateY(-100%);
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);

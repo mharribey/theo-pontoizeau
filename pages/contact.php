@@ -84,7 +84,7 @@
           <?php
             if(isset($_SESSION["notice"])){
           ?>
-          <div id="notice" class="border-all" style="text-align:center;margin:auto;animation:fade 0.5s ease-in;color:green">
+          <div id="notice" class="border-all" style="text-align:center;margin:auto;animation:fade 1s ease-in;color:green">
             <?= $_SESSION["notice"] ?>
           </div>
           <?php
@@ -95,7 +95,7 @@
         <div class="bottom border-top">
           <div class="link-box">
             <nav class="cl-effect-5">
-              <a href="contact.php"><span data-hover="you have done the hardest part, just click"><b>contact me :</b> pontoizeau.theo@gmail.com</span></a>
+              <p id="contact-link"><span data-hover="you have done the hardest part, just click"><b>contact me :</b> pontoizeau.theo@gmail.com</span></p>
     				</nav>
           </div>
         </div>

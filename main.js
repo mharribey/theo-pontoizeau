@@ -4,6 +4,15 @@ const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
 const content = document.querySelector(".content");
 const buttons = document.getElementsByClassName("navbar-link");
+const contact = document.getElementById("contact-link");
+
+contact.addEventListener("click", ()=>{
+  if((sPage == "index.html" || sPage == "")) {
+    window.location.href = 'pages/contact.php';
+  }else{
+    window.location.href = 'contact.php';
+  }
+});
 
 document.addEventListener("DOMContentLoaded",()=>{
   setTimeout(function(){
