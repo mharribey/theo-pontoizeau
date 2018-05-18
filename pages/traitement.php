@@ -17,27 +17,11 @@
     if($destinataire != null && $objet != null && $message != null){
       if (mail($destinataire, $objet, $message, $headers)) // Envoi du message
       {
-        ?>
-          <script type="text/javascript">
-              notice.style.display = "block";
-              notice.innerHTML = "Your message has been sent ! Well done :)"
-              setTimeout(function(){
-                notice.style.display = "none";
-              },1000)
-          </script>
-        <?php
+        $_SESSION["notice"] = "<p>Your message has been sent ! Well done :)</p>";
       }
       else // Non envoyé
       {
-        ?>
-          <script type="text/javascript">
-            notice.style.display = "block";
-            notice.innerHTML = "Your message could not be sent... try again?"
-            setTimeout(function(){
-              notice.style.display = "none";
-            },1000)
-          </script>
-        <?php
+        $_SESSION["notice"] = "<p>Your message could not be sent... try again?</p>";
       }
     }
 

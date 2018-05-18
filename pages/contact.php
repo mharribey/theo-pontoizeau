@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!doctype html>
 <html>
   <head>
@@ -77,7 +81,16 @@
             </form>
           </div>
 
-          <p id="notice" class="border-all">test</p>
+          <?php
+            if(isset($_SESSION["notice"])){
+          ?>
+          <div id="notice" class="border-all" style="text-align:center;margin:auto;animation:fade 0.5s ease-in;color:green">
+            <?= $_SESSION["notice"] ?>
+          </div>
+          <?php
+              unset($_SESSION["notice"]);
+            }
+          ?>
         </div>
         <div class="bottom border-top">
           <div class="link-box">
