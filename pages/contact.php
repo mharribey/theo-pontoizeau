@@ -44,11 +44,11 @@
 
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../assets/border.css">
-    <link rel="stylesheet" href="../assets/about.css">
+    <link rel="stylesheet" href="../assets/contact.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Théo Pontoizeau - About.</title>
+    <title>Théo Pontoizeau - Work.</title>
   </head>
 
   <body>
@@ -65,45 +65,19 @@
             <p class="navbar-link" id="about">about</p>
           </div>
         </div>
-        <div class="content hidden" id="about-content">
-          <div class="infos">
-            <div class="left">
-              <p>
-                hello there!<br>
-                my name is théo pontoizeau.<br>
-                I love design: particulary graphic, motion and web design.<br>
-                I spent 2 years in bordeaux studying mmi.<br>
-                it gives me the chance to work on a lot of (group) projects.<br>
-                <br>
-                <span class="border-bottom">studies :</span><br>
-                <br>
-                2016-2018 _ <b>university technology degree</b><br>
-                <i>at bordeaux montaigne university</i> <b>in digital media & internet.</b><br>
-                2014-2016 _ <b>high school degree</b><br>
-                <i>at lycée aimé césaire</i> <b>in sustainable development</b> <br>
-                <br>
-                <span class="border-bottom">experience :</span><br>
-                <br>
-                april 2018-now _ video editor intern at linguali<br>
-                <br>
-                december 2017-now _ graphic design for beth.design<br>
-                <br>
-                june 2017-august 2017 _ video editor at kweezine<br>
-                <br>
-                march 2017-january 2018 _ ui/ux designer for paupiette<br>
-                <br>
-                don’t hesitate to contact me!<br>
-                <br>
-              </p>
-            </div>
-            <div class="right">
-              <img src="../assets/theo-pdp.png" alt="photo-de-profil">
-            </div>
+        <div class="content hidden" id="contact-content">
+          <p> so you decided to contact me :) </p>
+          <p class="annotation"><i>just fill in this form and <b>lets get in touch !</b></i></p>
+
+          <div class="contact-form" id="form">
+            <form action="traitement.php" method="post">
+              <input type="email" name="mail" placeholder="Your mail : theo.ptz@gmail.com" required class="border-bottom">
+              <textarea type="text" name="message" placeholder="Your message : Do you love me ?" required class="border-bottom"></textarea>
+              <button type="submit" name="button" class="border-all">SEND</button>
+            </form>
           </div>
-          <br>
 
-          <p class="see-more">if you want to see more about my work, just click <a class="border-bottom" href="https://www.behance.net/pontoizeaue513"><b>here</b></a></p>
-
+          <p id="notice" class="border-all">test</p>
         </div>
         <div class="bottom border-top">
           <div class="link-box">
@@ -129,6 +103,8 @@
       </div>
     </div>
     <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript">
+      const notice = document.getElementById("notice");
+    </script>
   </body>
-
 </html>
