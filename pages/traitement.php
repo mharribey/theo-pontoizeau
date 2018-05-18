@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $destinataire = 'matharribey@gmail.com';
+    $destinataire = 'pontoizeau.theo@gmail.com';
 
     $expediteur = htmlspecialchars($_POST['mail']);
     $message = htmlspecialchars($_POST["message"]);
